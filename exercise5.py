@@ -16,7 +16,7 @@ Extras:
 '''
 def createRandomList(list,number):
     for i in range(number):
-        list.append(random.randint(0,50))
+        list.append(random.randint(0,20))
     list.sort()
 
 def numbersInCommon(a,b):
