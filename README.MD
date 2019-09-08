@@ -12,3 +12,4 @@ and their worked out solutions from practicePython.org
 6) exercise6.py: String Lists
 7) exercise7.py: List Comprehensions
 8) exercise8.py: Rock Paper Scissors
+9) exercise9.py: Guessing Game One
