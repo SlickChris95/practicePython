@@ -13,4 +13,5 @@ and their worked out solutions from practicePython.org
 7)    exercise7.py:     List Comprehensions
 8)    exercise8.py:     Rock Paper Scissors
 9)    exercise9.py:     Guessing Game One
-10)   exericise10.py:   List Overlap Comprehensions 
+10)   exercise10.py:    List Overlap Comprehensions
+11)   exercise11.py:    Check Primality Functions
