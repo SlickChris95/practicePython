@@ -15,3 +15,5 @@ and their worked out solutions from practicePython.org
 9)    exercise9.py:     Guessing Game One
 10)   exercise10.py:    List Overlap Comprehensions
 11)   exercise11.py:    Check Primality Functions
+12)   exercise12.py:    List Ends
+13)   exercise13.py:    Fibonacci
