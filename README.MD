@@ -17,3 +17,5 @@ and their worked out solutions from practicePython.org
 11)   exercise11.py:    Check Primality Functions
 12)   exercise12.py:    List Ends
 13)   exercise13.py:    Fibonacci
+14)   exercise14.py:    List Remove Duplicates
+15)   exercise15.py:    Reverse Word Order
