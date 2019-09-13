@@ -20,3 +20,4 @@ and their worked out solutions from practicePython.org
 14)   exercise14.py:    List Remove Duplicates
 15)   exercise15.py:    Reverse Word Order
 16)   exercise16.py:    Password Generator
+17)   exercise17.py:    Decode A Web Page
