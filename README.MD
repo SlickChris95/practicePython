@@ -21,3 +21,4 @@ and their worked out solutions from practicePython.org
 15)   exercise15.py:    Reverse Word Order
 16)   exercise16.py:    Password Generator
 17)   exercise17.py:    Decode A Web Page
+18)   exercise18.py:    Cows and Bulls
