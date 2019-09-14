@@ -18,55 +18,73 @@ the game and tell the user at the end.
 
 """
 import random
-#1) Generate random #
+import time
+
 ans = []
 cows = 0
 bulls = 0
+attempts = 0
+
+#1) Generate random #
+
 def createRandomNumber(n):
     for i in range(0,n):
-        ans.append(random.randint(0,10))
+        ans.append(random.randint(0,9))
 def checkCows(list1,list2):
     cows = 0
     a = list1
     b = list2
     for i in range(len(list1)):
         if(b[i]==a[i]):
-            cows +=1
-createRandomNumber(4)
-# user_num = input('Enter a 4 digit number: ')
-# user_num = list(user_num)
-# print(user_num)
-x = 0
-while x < 3:
+            cows = cows + 1
+    return cows
+def checkBulls(list1,list2):
+    bulls = 0
+    cows = checkCows(list1,list2)
+    for i in range(len(list1)):
+        if(list1[i] in list2):
+            bulls = bulls + 1
+    return bulls - cows
+def wonGame():
+    win = True
+    print('Congrats you are a true cowboy!')
+    time.sleep(1)
+    exit()
+
+def numberGuess():
+    attempts = 0
+    #2) User guesses #
     user_num = input('Enter a 4 digit number: ')
     user_num = list(user_num)
+    user_num = [int(i) for i in user_num]
     print(user_num)
     print(ans)
-    checkCows(user_num,ans)
+    #3)Check if any of the digits are the on the
+    #same spot
+    cows = checkCows(user_num,ans)
+    #4)Check if we have any bulls
+    bulls = checkBulls(user_num,ans)
     print('cows: {}'.format(cows))
+    print('bulls: {}'.format(bulls))
+    attempts += 1
+    print('attempts: {}'.format(attempts))
 
-    x +=1
-#2) User guesses #
-
-#3)Check if any of the digits are the on the
-#same spot
-
-#4)Check if we have any bulls
+    if(cows == 4):
+        wonGame()
 
 
 
 
 
+if __name__ == "__main__":
+    print("Welcome to the Cows and Bulls Game!")
+    print('''Rules: \n For every digit that the you guessed correctly in the correct place,
+    you get a “cow”. For every digit that is guessed correctly in the wrong place is a “bull.”
+    ''')
+    print('Good luck cowboy!')
+    createRandomNumber(4)
 
-#for every guess the user guessed in
-# the correct place they get a "cow"
-
-#for every digit the user guessed in the wrong
-#place is a "bull"
-
-
-
-#
-# if __name__ == "__main__":
-#     print("Welcome to the Cows and Bulls Game!")
-#     user_num = input('Enter a 4 digit number: ')
+    x = 0
+    while x < 100:
+        numberGuess()
+        x +=1
