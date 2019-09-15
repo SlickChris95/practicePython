@@ -16,11 +16,14 @@ url ="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-cult
 r_html = requests.get(url).text
 soup = BeautifulSoup(r_html,'html.parser')
 
-# ps= soup.findAll('p')
-# for p in ps:
-#     print(p.get_text())
-table = soup.findAll('div',class_="grid-items-2")
-for x in table:
-    pprint.pprint(x.find('p').text)
 
-# print(r_html)
+
+table = soup.findAll('div',class_="grid-items-2")
+#all the divs with class grid-items-2
+for x in table:
+    paragraphs = x.findAll('p')
+    #find all of the p elements within these divs
+    for para in paragraphs:
+        #print out the article in an orderly fashion
+        pprint.pprint(para.text)
+        print('\n')
