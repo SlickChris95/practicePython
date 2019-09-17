@@ -25,3 +25,4 @@ and their worked out solutions from practicePython.org
 19)   exercise19.py:    Decode A Web Page II
 20)   exercise20.py:    Element Search
 21)   exercise21.py:    Write to A File
+22)   exercise22.py:    Read from a file
