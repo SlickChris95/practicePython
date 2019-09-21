@@ -27,3 +27,4 @@ and their worked out solutions from practicePython.org
 21)   exercise21.py:    Write to A File
 22)   exercise22.py:    Read from a file
 23)   exercise23.py:    File Overlap
+24)   exercise24.py:    Draw a Game Board
