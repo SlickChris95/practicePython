@@ -28,3 +28,4 @@ and their worked out solutions from practicePython.org
 22)   exercise22.py:    Read from a file
 23)   exercise23.py:    File Overlap
 24)   exercise24.py:    Draw a Game Board
+25)   exercise25.py:    Guessing Game Two
